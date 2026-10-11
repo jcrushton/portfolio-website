@@ -400,6 +400,7 @@ a.case-card:hover { color: var(--text); transform: translateY(-2px); box-shadow:
 .contact-band a:hover { color: #C99A2E; }
 .contact-info .resume-link { font-size: 15px; font-weight: 600; text-decoration: underline; text-decoration-color: #C99A2E; text-underline-offset: 4px; display: inline-flex; align-items: center; min-height: 44px; width: fit-content; }
 .site-footer.on-emerald { background: #0F3D2E; color: #D9CDBE; padding: 0 0 48px; }
+.site-footer.on-emerald p { margin: 0; }
 .contact-band .contact { padding-bottom: 32px; }
 @media (max-width: 900px) { .contact-band { margin-top: 72px; } }
 .contact-band .btn-dark:hover { color: #0F3D2E; }
