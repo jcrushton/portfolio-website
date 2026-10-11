@@ -5,7 +5,8 @@ Instructional Design professional portfolio website for Jamie Rushton, served by
 
 - `index.html` – homepage (hero, featured project, skills, how I use AI, contact)
 - `case-study.html` – Fourth Wish Animal Adoption case study
-- `sandbox/` – the Adoption Desk, a playable practice CRM with a guided walkthrough
+- `sandbox/` – the Adoption Desk, a playable practice CRM with a guided walkthrough, six fully built cases, and working Animals, Applicants, and Reports screens (all sample data; `sandbox/sandbox.js` holds the case data at the top)
+- `assets/jamie-rushton-resume.pdf` – the resume linked from the nav and contact section (replace this file to update it)
 - `css/`, `js/`, `assets/` – shared styles, the contact form and theme toggle scripts, portrait and favicon
 
 It's plain HTML, CSS and JavaScript with no build step. GitHub Pages serves the files as they are.
