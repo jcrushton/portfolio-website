@@ -40,10 +40,10 @@
 
 var CASES = {
       '0417': {
-        animal: 'Apollo', kind: 'Lab mix, 3 yrs', applicant: 'Maya Alvarez', submitted: 'Sep 22', status: 'Needs review',
+        animal: 'Apollo', kind: 'Lab mix, 3 yrs', applicant: 'Maya Alvarez', submitted: 'Sep 22, 2026', status: 'Needs review',
         sub: 'Lab mix · 3 years · Male · 62 lb',
         animalFacts: [['Species', 'Dog'], ['Breed', 'Lab mix'], ['Age', '3 years'], ['Weight', '62 lb'], ['Neutered', 'Yes'], ['In care since', 'Jun 2025']],
-        applicantFacts: [['Name', 'Maya Alvarez'], ['City', 'Mesa, AZ'], ['Submitted', 'Sep 22'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Maya Alvarez'], ['City', 'Mesa, AZ'], ['Submitted', 'Sep 22, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Owns a single-family home with a fenced yard.'],
           ['Dog experience', '12 years. Two dogs at home today.'],
@@ -60,7 +60,7 @@ var CASES = {
           ['No entries since', "Eight months without a record. The X-ray result isn't on file.", 'vet']
         ],
         home: [
-          ['Visit', 'Completed Oct 2 by R. Okafor, volunteer.'],
+          ['Visit', 'Completed Oct 2, 2026 by R. Okafor, volunteer.'],
           ['Recommendation', 'Approve.'],
           ['Yard', '6 ft privacy fence. Gate latches.'],
           ['Animal spaces', "Steve's enclosure is in a spare room. The door closes."],
@@ -68,10 +68,10 @@ var CASES = {
           ['Cat', "Moose left the room and didn't come back during the visit.", 'cat']
         ],
         notes: [
-          ['Sep 22', 'Application received.'],
-          ['Sep 25', 'Phone interview. Applicant was confident and specific about training plans, and said Rosie “needs a job.”'],
-          ['Oct 2', 'Home visit completed.'],
-          ['Oct 6', 'Case assigned to you for review.']
+          ['Sep 22, 2026', 'Application received.'],
+          ['Sep 25, 2026', 'Phone interview. Applicant was confident and specific about training plans, and said Rosie “needs a job.”'],
+          ['Oct 2, 2026', 'Home visit completed.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.']
         ],
         flags: {
           vet: { must: true, note: 'Flagged. The next reviewer will see this gap first, and it shows on the case summary.' },
@@ -87,10 +87,10 @@ var CASES = {
       },
 
       '0412': {
-        animal: 'Juniper', kind: 'Tabby cat, 1 yr', applicant: 'Nia Brandt', submitted: 'Sep 20', status: 'Needs review',
+        animal: 'Juniper', kind: 'Tabby cat, 1 yr', applicant: 'Nia Brandt', submitted: 'Sep 20, 2026', status: 'Needs review',
         sub: 'Tabby cat · 1 year · Female · 8 lb',
         animalFacts: [['Species', 'Cat'], ['Breed', 'Domestic tabby'], ['Age', '1 year'], ['Weight', '8.4 lb'], ['Spayed', 'Yes'], ['In care since', 'May 2026']],
-        applicantFacts: [['Name', 'Nia Brandt'], ['City', 'Tempe, AZ'], ['Submitted', 'Sep 20'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Nia Brandt'], ['City', 'Tempe, AZ'], ['Submitted', 'Sep 20, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Rents a two-bedroom apartment. Signed landlord letter allows cats.', 'rent'],
           ['Cat experience', 'Nine years with one cat, Mango, who passed last spring.'],
@@ -100,14 +100,14 @@ var CASES = {
           ['Schedule', 'In the office Tuesday to Thursday and home the rest of the week.', 'alone']
         ],
         vet: [
-          ['May 12', 'Intake exam. Healthy, 7.9 lb.'],
-          ['May 12', 'Vaccines. FVRCP and rabies given. FeLV/FIV negative.'],
-          ['May 28', 'Spay. Completed, no complications.'],
-          ['Jun 2', 'Microchip implanted and registered.'],
-          ['Sep 15', 'Recheck. Healthy, 8.4 lb. Cleared for adoption.']
+          ['May 12, 2026', 'Intake exam. Healthy, 7.9 lb.'],
+          ['May 12, 2026', 'Vaccines. FVRCP and rabies given. FeLV/FIV negative.'],
+          ['May 28, 2026', 'Spay. Completed, no complications.'],
+          ['Jun 2, 2026', 'Microchip implanted and registered.'],
+          ['Sep 15, 2026', 'Recheck. Healthy, 8.4 lb. Cleared for adoption.']
         ],
         home: [
-          ['Visit', 'Completed Sep 29 by T. Nguyen, volunteer.'],
+          ['Visit', 'Completed Sep 29, 2026 by T. Nguyen, volunteer.'],
           ['Recommendation', 'Approve.'],
           ['Space', 'Second-floor apartment with a quiet bedroom set up as a safe room.'],
           ['Balcony', 'Fully netted before the visit. The door stays latched when no one is home.', 'balcony'],
@@ -115,10 +115,10 @@ var CASES = {
           ['Partner', 'Jordan was present and fully on board.']
         ],
         notes: [
-          ['Sep 20', 'Application received.'],
-          ['Sep 23', 'Phone interview. Nia asked thoughtful questions about Juniper’s energy and said they would rather wait for the right cat than rush.'],
-          ['Sep 29', 'Home visit completed.'],
-          ['Oct 6', 'Case assigned to you for review.']
+          ['Sep 20, 2026', 'Application received.'],
+          ['Sep 23, 2026', 'Phone interview. Nia asked thoughtful questions about Juniper’s energy and said they would rather wait for the right cat than rush.'],
+          ['Sep 29, 2026', 'Home visit completed.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.']
         ],
         flags: {
           rent: { note: "Flagged, but this one is already settled. The signed landlord letter is on file, so renting isn't a risk here." },
@@ -134,10 +134,10 @@ var CASES = {
       },
 
       '0409': {
-        animal: 'Biscuit', kind: 'Corgi mix, 5 yrs', applicant: 'Ellen Whitaker', submitted: 'Sep 18', status: 'In progress',
+        animal: 'Biscuit', kind: 'Corgi mix, 5 yrs', applicant: 'Ellen Whitaker', submitted: 'Sep 18, 2026', status: 'In progress',
         sub: 'Corgi mix · 5 years · Male · 28 lb',
         animalFacts: [['Species', 'Dog'], ['Breed', 'Corgi mix'], ['Age', '5 years'], ['Weight', '28 lb'], ['Neutered', 'Yes'], ['In care since', 'Mar 2026']],
-        applicantFacts: [['Name', 'Ellen Whitaker'], ['City', 'Gilbert, AZ'], ['Submitted', 'Sep 18'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Ellen Whitaker'], ['City', 'Gilbert, AZ'], ['Submitted', 'Sep 18, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Owns a ranch home with a fenced back yard.'],
           ['Dog experience', 'Lifelong. Her last corgi, Pudding, lived to 15.'],
@@ -147,15 +147,15 @@ var CASES = {
           ['Household', 'Lives with her husband. Grandson Theo (4) stays Thursday to Sunday every week.', 'grand']
         ],
         vet: [
-          ['Mar 9', 'Intake exam. Healthy, 28 lb.'],
-          ['Mar 9', 'Vaccines. DHPP, rabies, and Bordetella given.'],
-          ['Mar 24', 'Neuter. Completed, no complications.'],
-          ['Apr 14', 'Dental cleaning. Two extractions, healed well.'],
-          ['Aug 12', 'Behavior evaluation. Snapped at a child who reached for his food bowl. No skin broken. Placement note: adults only, or children 10 and older.', 'behav'],
-          ['Sep 2', 'Recheck. Healthy, 27.6 lb. Cleared medically.']
+          ['Mar 9, 2026', 'Intake exam. Healthy, 28 lb.'],
+          ['Mar 9, 2026', 'Vaccines. DHPP, rabies, and Bordetella given.'],
+          ['Mar 24, 2026', 'Neuter. Completed, no complications.'],
+          ['Apr 14, 2026', 'Dental cleaning. Two extractions, healed well.'],
+          ['Aug 12, 2026', 'Behavior evaluation. Snapped at a child who reached for his food bowl. No skin broken. Placement note: adults only, or children 10 and older.', 'behav'],
+          ['Sep 2, 2026', 'Recheck. Healthy, 27.6 lb. Cleared medically.']
         ],
         home: [
-          ['Visit', 'Completed Sep 26 by R. Okafor, volunteer.'],
+          ['Visit', 'Completed Sep 26, 2026 by R. Okafor, volunteer.'],
           ['Recommendation', 'Approve. “Lovely, welcoming home.”'],
           ['Yard', 'Fenced back yard, 5 ft fence. Gate latches.'],
           ['Dog space', 'Bed and crate set up in the living room.'],
@@ -163,10 +163,10 @@ var CASES = {
           ['Hosts', 'Ellen and her husband were both present and friendly.']
         ],
         notes: [
-          ['Sep 18', 'Application received.'],
-          ['Sep 21', 'Phone interview. Ellen was warm, organized, and asked good questions about Biscuit’s routine.'],
-          ['Sep 26', 'Home visit completed. The Aug 12 behavior note was not attached to the visit packet.'],
-          ['Oct 6', 'Case assigned to you for review.']
+          ['Sep 18, 2026', 'Application received.'],
+          ['Sep 21, 2026', 'Phone interview. Ellen was warm, organized, and asked good questions about Biscuit’s routine.'],
+          ['Sep 26, 2026', 'Home visit completed. The Aug 12 behavior note was not attached to the visit packet.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.']
         ],
         flags: {
           behav: { must: true, note: 'Flagged. This is the note that limits where Biscuit can go, and it was missing from the home visit packet.' },
@@ -182,10 +182,10 @@ var CASES = {
       },
 
       '0405': {
-        animal: 'Marmalade', kind: 'Orange cat, 2 yrs', applicant: 'Sam Torres', submitted: 'Sep 17', status: 'In progress',
+        animal: 'Marmalade', kind: 'Orange cat, 2 yrs', applicant: 'Sam Torres', submitted: 'Sep 17, 2026', status: 'In progress',
         sub: 'Domestic shorthair · 2 years · Male · 11 lb',
         animalFacts: [['Species', 'Cat'], ['Breed', 'Domestic shorthair'], ['Age', '2 years'], ['Weight', '11 lb'], ['Neutered', 'Yes'], ['In care since', 'Jun 2026']],
-        applicantFacts: [['Name', 'Sam Torres'], ['City', 'Chandler, AZ'], ['Submitted', 'Sep 17'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Sam Torres'], ['City', 'Chandler, AZ'], ['Submitted', 'Sep 17, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Rents a one-bedroom apartment. Landlord letter on file.'],
           ['Cat experience', 'First cat as an adult. Grew up with family cats.'],
@@ -195,13 +195,13 @@ var CASES = {
           ['Schedule', 'Works overnight shifts and is home by 7 a.m.', 'nights']
         ],
         vet: [
-          ['Jun 11', 'Intake exam. Healthy, 11 lb.'],
-          ['Jun 11', 'Vaccines. FVRCP and rabies given. FeLV/FIV negative.'],
-          ['Jun 24', 'Neuter. Completed, no complications.'],
-          ['Aug 20', 'Recheck. Mild tartar on back teeth. Recheck in six months.', 'dental']
+          ['Jun 11, 2026', 'Intake exam. Healthy, 11 lb.'],
+          ['Jun 11, 2026', 'Vaccines. FVRCP and rabies given. FeLV/FIV negative.'],
+          ['Jun 24, 2026', 'Neuter. Completed, no complications.'],
+          ['Aug 20, 2026', 'Recheck. Mild tartar on back teeth. Recheck in six months.', 'dental']
         ],
         home: [
-          ['Visit', 'Completed Sep 28 by T. Nguyen, volunteer.'],
+          ['Visit', 'Completed Sep 28, 2026 by T. Nguyen, volunteer.'],
           ['Recommendation', 'Approve.'],
           ['Cat space', 'Corner of the bedroom with a tree, a litter box, and a covered bed.'],
           ['Safety', 'Window screens secure. Cords tucked away.'],
@@ -209,10 +209,10 @@ var CASES = {
           ['Building', 'Quiet complex with no size limits for cats.']
         ],
         notes: [
-          ['Sep 17', 'Application received.'],
-          ['Sep 20', 'Phone interview. Sam was friendly and prompt. Mentioned “walking Bruno before the call” and did not bring Bruno up again.'],
-          ['Sep 28', 'Home visit completed.'],
-          ['Oct 6', 'Case assigned to you for review.']
+          ['Sep 17, 2026', 'Application received.'],
+          ['Sep 20, 2026', 'Phone interview. Sam was friendly and prompt. Mentioned “walking Bruno before the call” and did not bring Bruno up again.'],
+          ['Sep 28, 2026', 'Home visit completed.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.']
         ],
         flags: {
           bruno: { must: true, note: 'Flagged. The application says no other pets, but there are a dog\'s things by the door and a mention of Bruno on the phone. That is a question to ask.' },
@@ -228,10 +228,10 @@ var CASES = {
       },
 
       '0401': {
-        animal: 'Pickles', kind: 'Holland lop rabbit, 4 yrs', applicant: 'Grace Lin', submitted: 'Sep 15', status: 'Awaiting documents',
+        animal: 'Pickles', kind: 'Holland lop rabbit, 4 yrs', applicant: 'Grace Lin', submitted: 'Sep 15, 2026', status: 'Awaiting documents',
         sub: 'Holland lop rabbit · 4 years · Female · 4 lb',
         animalFacts: [['Species', 'Rabbit'], ['Breed', 'Holland lop'], ['Age', '4 years'], ['Weight', '4.1 lb'], ['Spayed', 'Yes'], ['In care since', 'Feb 2026']],
-        applicantFacts: [['Name', 'Grace Lin'], ['City', 'Phoenix, AZ'], ['Submitted', 'Sep 15'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Grace Lin'], ['City', 'Phoenix, AZ'], ['Submitted', 'Sep 15, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Owns a townhouse. HOA permits rabbits and the approval letter is attached.', 'hoa'],
           ['Rabbit experience', 'Six years. One rabbit at home today, Mochi (3).'],
@@ -241,14 +241,14 @@ var CASES = {
           ['Housing plan', 'Rabbit-proofed dining room with a 4 by 6 ft pen and daily supervised free roam.']
         ],
         vet: [
-          ['Feb 10', 'Intake exam. Healthy, 4.1 lb.'],
-          ['Feb 24', 'Spay. Completed, no complications.'],
-          ['Mar 3', 'Vaccines. RHDV2 given.'],
-          ['Apr 8', 'Recheck. Mild sniffles, cleared with a 7-day course. No return since.', 'sniffle'],
-          ['Sep 9', 'Dental check. Teeth even, no overgrowth. Healthy, 4.1 lb.']
+          ['Feb 10, 2026', 'Intake exam. Healthy, 4.1 lb.'],
+          ['Feb 24, 2026', 'Spay. Completed, no complications.'],
+          ['Mar 3, 2026', 'Vaccines. RHDV2 given.'],
+          ['Apr 8, 2026', 'Recheck. Mild sniffles, cleared with a 7-day course. No return since.', 'sniffle'],
+          ['Sep 9, 2026', 'Dental check. Teeth even, no overgrowth. Healthy, 4.1 lb.']
         ],
         home: [
-          ['Visit', 'Completed Oct 3 by T. Nguyen, volunteer.'],
+          ['Visit', 'Completed Oct 3, 2026 by T. Nguyen, volunteer.'],
           ['Recommendation', 'Approve.'],
           ['Pen and floors', 'Dining room pen is ready. Rugs cover the hard floors for traction, and cords are boxed.'],
           ['Mochi', 'Calm and curious. Greeted the volunteer, then went back to her hay.'],
@@ -256,11 +256,11 @@ var CASES = {
           ['Supplies', 'Hay, leafy greens, and a litter box set up.']
         ],
         notes: [
-          ['Sep 15', 'Application received.'],
-          ['Sep 17', 'Requested vet reference letter and HOA approval.'],
-          ['Oct 3', 'Home visit completed.'],
-          ['Oct 6', 'Case assigned to you for review.'],
-          ['Oct 8', 'Vet letter and HOA approval received. File is complete.']
+          ['Sep 15, 2026', 'Application received.'],
+          ['Sep 17, 2026', 'Requested vet reference letter and HOA approval.'],
+          ['Oct 3, 2026', 'Home visit completed.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.'],
+          ['Oct 8, 2026', 'Vet letter and HOA approval received. File is complete.']
         ],
         flags: {
           hoa: { note: 'Noted, but the HOA approval letter arrived Oct 8. This one is already settled.' },
@@ -276,10 +276,10 @@ var CASES = {
       },
 
       '0398': {
-        animal: 'Waffles', kind: 'Beagle, 7 yrs', applicant: 'Chris Boyd', submitted: 'Sep 14', status: 'Needs review',
+        animal: 'Waffles', kind: 'Beagle, 7 yrs', applicant: 'Chris Boyd', submitted: 'Sep 14, 2026', status: 'Needs review',
         sub: 'Beagle · 7 years · Male · 24 lb',
         animalFacts: [['Species', 'Dog'], ['Breed', 'Beagle'], ['Age', '7 years'], ['Weight', '24 lb'], ['Neutered', 'Yes'], ['In care since', 'Jul 2026']],
-        applicantFacts: [['Name', 'Chris Boyd'], ['City', 'Scottsdale, AZ'], ['Submitted', 'Sep 14'], ['Reviewer', 'You (trainee)']],
+        applicantFacts: [['Name', 'Chris Boyd'], ['City', 'Scottsdale, AZ'], ['Submitted', 'Sep 14, 2026'], ['Reviewer', 'You (trainee)']],
         app: [
           ['Residence', 'Owns a ranch home with a fenced yard.'],
           ['Dog experience', 'Grew up with beagles. Waffles would be the first dog as an adult.'],
@@ -289,14 +289,14 @@ var CASES = {
           ['Schedule', 'Works from a home office the rest of the month.']
         ],
         vet: [
-          ['Jul 21', 'Intake exam. Healthy overall, 24 lb.'],
-          ['Jul 21', 'Bloodwork. Low thyroid. Started a pill, twice daily.', 'meds'],
-          ['Aug 18', 'Recheck. Levels improving. Continue twice-daily dose and retest in 8 weeks.'],
-          ['Sep 8', 'Dental cleaning. No extractions.'],
-          ['Sep 8', 'Vaccines. Up to date.']
+          ['Jul 21, 2026', 'Intake exam. Healthy overall, 24 lb.'],
+          ['Jul 21, 2026', 'Bloodwork. Low thyroid. Started a pill, twice daily.', 'meds'],
+          ['Aug 18, 2026', 'Recheck. Levels improving. Continue twice-daily dose and retest in 8 weeks.'],
+          ['Sep 8, 2026', 'Dental cleaning. No extractions.'],
+          ['Sep 8, 2026', 'Vaccines. Up to date.']
         ],
         home: [
-          ['Visit', 'Completed Sep 30 by R. Okafor, volunteer.'],
+          ['Visit', 'Completed Sep 30, 2026 by R. Okafor, volunteer.'],
           ['Recommendation', 'Approve.'],
           ['Yard', 'Fenced. A gap at one corner was patched with a board during the visit.', 'fence'],
           ['Dog space', 'Bed in the living room. Crate set up but unused.'],
@@ -304,10 +304,10 @@ var CASES = {
           ['Sitter', 'No sitter or kennel named when asked.']
         ],
         notes: [
-          ['Sep 14', 'Application received.'],
-          ['Sep 18', 'Phone interview. Chris asked careful questions about Waffles’s medication and took notes. Did not mention who would cover doses during work travel.'],
-          ['Sep 30', 'Home visit completed.'],
-          ['Oct 6', 'Case assigned to you for review.']
+          ['Sep 14, 2026', 'Application received.'],
+          ['Sep 18, 2026', 'Phone interview. Chris asked careful questions about Waffles’s medication and took notes. Did not mention who would cover doses during work travel.'],
+          ['Sep 30, 2026', 'Home visit completed.'],
+          ['Oct 6, 2026', 'Case assigned to you for review.']
         ],
         flags: {
           travel: { must: true, note: 'Flagged. Waffles needs a pill twice a day, and there is no plan for the roughly ten days a month Chris is away.' },
@@ -515,7 +515,7 @@ var RP = {
 
   function topBar() {
     return '<header class="topbar">' +
-      '<div class="topbar-left"><span class="practice">Practice environment</span><span class="muted">Nothing here is real. Click anything.</span></div>' +
+      '<div class="topbar-left"><span class="practice">Practice environment</span><span class="muted">Nothing here is real. Click anything.</span><span class="asof">Assume today is Sun, Oct 11, 2026.</span></div>' +
       '<div class="topbar-right">' +
         btn('startTour', null, 'btn-replay', 'Replay walkthrough') +
         '<a class="btn-ghost" href="../">Back to portfolio</a>' +
@@ -842,7 +842,7 @@ var RP = {
     var stepOf = function (n, name) { return 'Step ' + n + ' of 5 · ' + name; };
     var c;
     if (step === 0) {
-      c = { label: 'Welcome', title: 'Welcome to the Adoption Desk', body: "You're a new case reviewer at Fourth Wish, a fictional animal rescue. This is a practice space: nothing here is real and you can't break anything. We'll walk through one case from queue to decision, then every case in the queue is yours to explore.", hint: '' };
+      c = { label: 'Welcome', title: 'Welcome to the Adoption Desk', body: "You're a new case reviewer at Fourth Wish, a fictional animal rescue. This is a practice space: nothing here is real and you can't break anything. We'll walk through one case from queue to decision, then every case in the queue is yours to explore. For every date in the files, assume today is Sunday, Oct 11, 2026.", hint: '' };
     } else if (offTrack) {
       c = { label: 'Pick up where you left off', title: "Back to Apollo's case", body: "The walkthrough continues in Apollo's case (#0417). You can come back to this one any time.", hint: 'Go to the queue and open the highlighted row, or press Show me.' };
     } else if (step === 1) {

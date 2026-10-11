@@ -73,6 +73,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #0E6B73; outline-offs
 .topbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
 .practice { background: #FFE7B8; color: #7A4B00; font-size: 12px; font-weight: 600; padding: 6px 10px; border-radius: 999px; }
 .muted { color: #5B6770; }
+.asof { font-size: 13px; font-weight: 600; }
 .btn-ghost {
   display: inline-flex;
   align-items: center;
