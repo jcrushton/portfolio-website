@@ -9,12 +9,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="sandbox.css">
+<link rel="stylesheet" href="sandbox.css?v=20261011">
+<link rel="stylesheet" href="dark.css?v=20261011">
+<script>
+  // Set the theme before first paint so dark mode doesn't flash light.
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
 </head>
 <body>
 <div id="app">
   <noscript><p style="padding: 28px;">This practice sandbox needs JavaScript turned on. <a href="../case-study.html">Read the case study</a> instead.</p></noscript>
 </div>
-<script src="sandbox.js"></script>
+<script src="sandbox.js?v=20261011"></script>
+<script src="../js/theme.js?v=20261011"></script>
 </body>
 </html>

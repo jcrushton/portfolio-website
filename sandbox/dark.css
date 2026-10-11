@@ -1,0 +1,134 @@
+/* Dark theme and theme toggle for the Adoption Desk sandbox.
+   Kept separate from sandbox.css so the sandbox's light styles stay untouched;
+   everything here only applies under :root[data-theme="dark"], except the toggle. */
+
+/* Theme toggle (added by ../js/theme.js), fixed to the top right */
+.theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 16px;
+  z-index: 20;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid #C9C5BA;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: #1E2A32;
+  box-shadow: 0 4px 14px rgba(30, 42, 50, 0.16);
+}
+.theme-toggle:hover { color: #0E6B73; }
+.theme-toggle svg { display: block; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* Leave room for the toggle at the top right */
+.topbar { padding-right: 76px; }
+@media (max-width: 900px) {
+  .topbar { padding-right: 76px; }
+  .sidenav { padding-right: 68px; }
+}
+
+:root[data-theme="dark"] { color-scheme: dark; }
+:root[data-theme="dark"] body { background: #11181D; color: #E8EDF0; }
+:root[data-theme="dark"] button:focus-visible,
+:root[data-theme="dark"] a:focus-visible,
+:root[data-theme="dark"] .field:focus-within { outline-color: #4FB3BB; }
+:root[data-theme="dark"] .coach button:focus-visible { outline-color: #F2A33A; }
+
+:root[data-theme="dark"] .theme-toggle { background: #1A242B; border-color: #46575F; color: #F2A33A; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45); }
+:root[data-theme="dark"] .theme-toggle:hover { color: #FFC555; }
+
+/* Side nav: a shade darker than the page so it still reads as a rail */
+:root[data-theme="dark"] .sidenav { background: #0B1115; }
+:root[data-theme="dark"] .navbtn:hover { background: #1A242B; }
+:root[data-theme="dark"] .navbtn.current { background: #22303A; }
+:root[data-theme="dark"] .count { color: #0B1115; }
+:root[data-theme="dark"] .me { border-top-color: #26353F; }
+
+/* Surfaces and lines */
+:root[data-theme="dark"] .topbar,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .qrow { background: #1A242B; }
+:root[data-theme="dark"] .topbar,
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .tablist,
+:root[data-theme="dark"] .qrow.head { border-color: #34454F; }
+:root[data-theme="dark"] .qrow,
+:root[data-theme="dark"] .fact,
+:root[data-theme="dark"] .frow,
+:root[data-theme="dark"] .flagwrap { border-bottom-color: #26353F; }
+:root[data-theme="dark"] .qrow,
+:root[data-theme="dark"] .field input,
+:root[data-theme="dark"] .tab[aria-selected="true"] { color: #E8EDF0; }
+:root[data-theme="dark"] .qrow.head,
+:root[data-theme="dark"] button.qrow:hover { background: #212D35; }
+
+/* Muted text */
+:root[data-theme="dark"] .muted,
+:root[data-theme="dark"] .sub,
+:root[data-theme="dark"] .stat span,
+:root[data-theme="dark"] .search-label,
+:root[data-theme="dark"] .qrow.head,
+:root[data-theme="dark"] .qrow .who span,
+:root[data-theme="dark"] .empty,
+:root[data-theme="dark"] .case-title .mono,
+:root[data-theme="dark"] .facts h2,
+:root[data-theme="dark"] .decision h2.small,
+:root[data-theme="dark"] .fact span:first-child,
+:root[data-theme="dark"] .tab,
+:root[data-theme="dark"] .frow .k,
+:root[data-theme="dark"] .frow .mono { color: #A9B7C0; }
+
+/* Inputs and buttons */
+:root[data-theme="dark"] .field { background: #11181D; border-color: #46575F; }
+:root[data-theme="dark"] .field svg { stroke: #A9B7C0; }
+:root[data-theme="dark"] .btn-ghost,
+:root[data-theme="dark"] .flagbtn { background: #1A242B; border-color: #46575F; color: #E8EDF0; }
+:root[data-theme="dark"] .btn-ghost:hover { background: #212D35; }
+/* The amber Replay walkthrough button keeps its color, with dark text */
+:root[data-theme="dark"] .btn-replay { background: #FFC555; border-color: #FFC555; color: #1E2A32; }
+:root[data-theme="dark"] .btn-replay:hover { background: #F7B53A; }
+
+/* Notice and status pills */
+:root[data-theme="dark"] .notice,
+:root[data-theme="dark"] .tone-progress { background: #1B2D45; color: #A8C8EE; }
+:root[data-theme="dark"] .notice button { color: #A8C8EE; }
+:root[data-theme="dark"] .practice,
+:root[data-theme="dark"] .tone-review { background: #3D2E12; color: #FFD58A; }
+:root[data-theme="dark"] .tone-docs { background: #2A3239; color: #C5CED4; }
+:root[data-theme="dark"] .tone-done { background: #17321F; color: #8FD4A6; }
+
+/* Case page */
+:root[data-theme="dark"] .back,
+:root[data-theme="dark"] .case-icon { color: #4FB3BB; }
+:root[data-theme="dark"] .case-icon { background: #123A3E; }
+:root[data-theme="dark"] .tab[aria-selected="true"] { border-bottom-color: #4FB3BB; }
+:root[data-theme="dark"] .flagwrap.on,
+:root[data-theme="dark"] .gapbox.on { background: #2B2414; }
+:root[data-theme="dark"] .gapbox { border-color: #46575F; }
+:root[data-theme="dark"] .gapbox.on { border-color: #F2A33A; }
+:root[data-theme="dark"] .flagnote { color: #FFD58A; }
+:root[data-theme="dark"] .flagbtn[aria-pressed="true"] { background: #3D2E12; border-color: #F2A33A; color: #FFD58A; }
+
+:root[data-theme="dark"] .choice { background: #1A242B; }
+:root[data-theme="dark"] .choice.approve { color: #4FB3BB; }
+:root[data-theme="dark"] .choice.info { color: #E8EDF0; }
+:root[data-theme="dark"] .choice.deny { color: #E8847D; }
+:root[data-theme="dark"] .choice[aria-pressed="true"] { color: #FFFFFF; }
+:root[data-theme="dark"] .choice.approve[aria-pressed="true"] { background: #0E6B73; border-color: #0E6B73; }
+:root[data-theme="dark"] .choice.info[aria-pressed="true"] { background: #46616F; border-color: #46616F; }
+:root[data-theme="dark"] .choice.deny[aria-pressed="true"] { background: #A4302A; border-color: #A4302A; }
+
+:root[data-theme="dark"] .tone-good { background: #17321F; border-color: #2F6B45; color: #BFE6CC; }
+:root[data-theme="dark"] .tone-warn { background: #2B2414; border-color: #F2A33A; color: #FFD58A; }
+:root[data-theme="dark"] .tone-bad { background: #3A1A18; border-color: #8A3A34; color: #F2BDB8; }
+
+/* Coach panel: lift it off the dark page */
+:root[data-theme="dark"] .coach { background: #26353F; border: 1px solid #3A4C57; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); }
+:root[data-theme="dark"] .dot { background: #5A6C77; }
+:root[data-theme="dark"] .dot.on { background: #F2A33A; }
