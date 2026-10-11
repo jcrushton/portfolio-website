@@ -14,6 +14,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script>
+  // Set the theme before first paint so dark mode doesn't flash light.
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -177,10 +188,10 @@
         <a class="email" href="mailto:jcrushton25@gmail.com">jcrushton25@gmail.com</a>
         <a class="linkedin" href="https://www.linkedin.com/in/jamie-rushton" target="_blank" rel="noopener">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <rect width="24" height="24" rx="3" fill="#0F3D2E"/>
-            <path d="M7 9H9.5V17H7V9Z" fill="#F5EFE0"/>
-            <circle cx="8.25" cy="6.5" r="1.25" fill="#F5EFE0"/>
-            <path d="M11.5 9H13.9V10.2C14.3 9.5 15.2 8.8 16.5 8.8C18.7 8.8 19.5 10.2 19.5 12.6V17H17V13.1C17 11.9 16.6 11.1 15.5 11.1C14.6 11.1 14.1 11.7 13.9 12.3C13.85 12.45 13.9 12.75 13.9 13V17H11.5V9Z" fill="#F5EFE0"/>
+            <rect class="icon-bg" width="24" height="24" rx="3" fill="#0F3D2E"/>
+            <path class="icon-fg" d="M7 9H9.5V17H7V9Z" fill="#F5EFE0"/>
+            <circle cx="8.25" cy="6.5" r="1.25" class="icon-fg" fill="#F5EFE0"/>
+            <path d="M11.5 9H13.9V10.2C14.3 9.5 15.2 8.8 16.5 8.8C18.7 8.8 19.5 10.2 19.5 12.6V17H17V13.1C17 11.9 16.6 11.1 15.5 11.1C14.6 11.1 14.1 11.7 13.9 12.3C13.85 12.45 13.9 12.75 13.9 13V17H11.5V9Z" class="icon-fg" fill="#F5EFE0"/>
           </svg>
           Connect on LinkedIn
         </a>
@@ -212,5 +223,6 @@
 </footer>
 
 <script src="js/contact.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>
