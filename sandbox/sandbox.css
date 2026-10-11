@@ -86,6 +86,8 @@ button:focus-visible, a:focus-visible { outline: 3px solid #0E6B73; outline-offs
   text-decoration: none;
 }
 .btn-ghost:hover { background: #FAF9F6; }
+.btn-replay { background: #FFC555; }
+.btn-replay:hover { background: #F7B53A; }
 
 .notice {
   display: flex;

@@ -150,7 +150,7 @@
     return '<header class="topbar">' +
       '<div class="topbar-left"><span class="practice">Practice environment</span><span class="muted">Nothing here is real. Click anything.</span></div>' +
       '<div class="topbar-right">' +
-        btn('startTour', null, 'btn-ghost', 'Replay walkthrough') +
+        btn('startTour', null, 'btn-ghost btn-replay', 'Replay walkthrough') +
         '<a class="btn-ghost" href="../">Back to portfolio</a>' +
       '</div>' +
     '</header>';
