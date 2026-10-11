@@ -27,4 +27,5 @@ The site appears at https://jcrushton.github.io/portfolio-website/.
 
 - The contact form opens the visitor's email app with the note pre-filled, since GitHub Pages has no server to receive form posts.
 - The testimonials section is in `index.html` but commented out until real quotes are ready.
-- Dark mode: the sun/moon button at the top right switches themes and remembers the choice. Until a visitor picks one, the site follows their system setting. Dark colors live in `:root[data-theme="dark"]` at the top of `css/style.css`. The sandbox keeps its own light look.
+- Dark mode: the sun/moon button at the top right switches themes and remembers the choice. Until a visitor picks one, the site follows their system setting. Dark colors live in `:root[data-theme="dark"]` at the top of `css/style.css`. The sandbox has its own dark colors in `sandbox/dark.css`.
+- Pages link their CSS and JS with a `?v=` version so browsers don't mix a cached old stylesheet with new pages. Bump it in all three HTML files whenever CSS or JS changes.
