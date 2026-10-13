@@ -404,3 +404,7 @@ a.case-card:hover { color: var(--text); transform: translateY(-2px); box-shadow:
 .contact-band .contact { padding-bottom: 32px; }
 @media (max-width: 900px) { .contact-band { margin-top: 72px; } }
 .contact-band .btn-dark:hover { color: #0F3D2E; }
+
+/* Testimonials: one or more quotes, centered */
+.quotes { width: 100%; max-width: 720px; display: flex; flex-direction: column; gap: 24px; }
+.quote blockquote { font-size: 17px; }
